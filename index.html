@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+        <div id="array-input-container">
+            <input type="text" id="array-input" placeholder="Enter array elements separated by commas">
+            <button onclick="generateArrayFromInput()">Generate Array</button>
+        </div>
+        <div id="array-container"></div>
+        <div class="controls">
+            <button onclick="generateRandomArray()">Generate Random Array</button>
+            <button onclick="sortArray('bubbleSort')">Bubble Sort</button>
+            <button onclick="sortArray('quickSort')">Quick Sort</button>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script src="algorithms.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
